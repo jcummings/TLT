@@ -1,6 +1,6 @@
 # Total Life Tracker Website
 
-This is the official website for Total Life Tracker iOS app, providing privacy policy and support information.
+This repository contains the static website source for the Total Life Tracker iOS app, including privacy policy and support pages. The source files alone do not confirm that the site is deployed.
 
 ## Pages
 
@@ -40,7 +40,7 @@ Then open `http://localhost:8080` in your browser.
 
 ## iOS App Integration
 
-Use these URLs in your iOS app's configuration:
+After deploying the site, replace `yourdomain.com` below with the confirmed hosting domain and verify both pages before using the URLs in your iOS app's configuration:
 - Privacy Policy: `https://yourdomain.com/privacy-policy.html`
 - Support: `https://yourdomain.com/support.html`
 
@@ -51,6 +51,6 @@ All pages use Bootstrap CDN, so no build process is required. You can customize:
 - Bootstrap theme by changing the CDN link
 - Add custom CSS by creating a `style.css` file
 
-## Note
+## Support Contact
 
-The contact form on the support page is a demo form. For production use, you'll need to implement server-side processing to handle form submissions (e.g., using a service like Formspree, EmailJS, or a custom backend).
+The support page contains an FAQ and displays `support@jcummings.net` as the contact address. Users contact support by emailing that address. There is no contact form or form-submission backend in this website source.
