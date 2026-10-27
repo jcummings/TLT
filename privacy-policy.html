@@ -33,42 +33,85 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <h1 class="mb-4">Privacy Policy</h1>
-                <p class="text-muted">Last updated: February 17, 2026</p>
+                <p class="text-muted">Last updated: October 27, 2026</p>
 
                 <div class="card mb-4">
                     <div class="card-body">
                         <h2 class="h5">Introduction</h2>
-                        <p>
-                            Total Life Tracker ("we", "our", or "us") is committed to protecting your privacy. 
-                        </p>
+                        <p>Total Life Tracker helps you record and review your daily activities. The app stores personal information on your device, and some features send information to external services. This policy distinguishes those activities.</p>
                     </div>
                 </div>
 
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h2 class="h5">Information We Collect</h2>
-                        <p>We do not collect, store or transmit any personal data</p>
+                        <h2 class="h5">Information Stored on Your Device</h2>
+                        <p>The app saves tracker definitions, categories, entries, notes, dates, daily reports, custom questions and answers, selected tracker snapshots, and app preferences on your device. Depending on what you record and which features you use, this can include health and habit information, step counts, meditation time, location coordinates and addresses, weather information, and references to photos you capture or select.</p>
+                        <p>These records support your tracking history, reports, and preferences. Structured records are saved in local app storage (AsyncStorage); photo records refer to files available on the device. The app does not add its own encryption layer to these stored records. Local storage does not mean that every feature operates without network access.</p>
                     </div>
                 </div>
 
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="h5">Device Permissions and Location</h2>
+                        <p>Location and weather features request permission to access your location while you use the app. They use latitude and longitude to record a place, look up an address, or obtain weather. Weather can load automatically when the weather tracker or Daily screen opens, as well as when you refresh it. Loading weather on the Daily screen also fills in location information that is included when you save the report.</p>
+                        <p>The app uses the device's geocoding service to convert coordinates to place names or addresses. These lookups may send coordinates to the platform's geocoding provider; they should not be assumed to happen entirely on the device.</p>
+                        <p>Photo features request camera or photo-library access when you capture or select an image. Step tracking requests motion/pedometer permission and reads step counts. You can deny or revoke these permissions in your device settings; the corresponding features may then be unavailable. Revoking permission does not remove information already saved.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="h5">Weather Requests to Open-Meteo</h2>
+                        <p>To retrieve weather, the app sends latitude and longitude in an HTTPS request to <code>api.open-meteo.com</code>. The request includes the coordinates returned by the device without additional rounding by the app. The weather request does not include your tracker notes, custom answers, or photos.</p>
+                        <p>Open-Meteo processes the request under its own <a href="https://open-meteo.com/en/terms">Terms &amp; Privacy</a>. Its published notice for the free API says it may collect IP addresses and retain troubleshooting logs containing geographical coordinates, with those logs deleted after 90 days. This is Open-Meteo's stated practice, not a retention guarantee made by Total Life Tracker.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="h5">Exports and Sharing</h2>
+                        <p>When you export tracker data or daily reports, the app creates a CSV file in its local documents storage and opens the device's sharing interface. Depending on the export, the file can contain tracker values, notes, custom answers, health or activity information, and location coordinates or addresses. Tracker photo values are exported as file references rather than image attachments.</p>
+                        <p>If you choose a sharing destination, the selected app, service, or recipient receives the exported information and handles it under its own practices. Export files can remain on the device after sharing; deleting a tracker does not delete copies you have exported or shared.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="h5">Backend Connections and Diagnostic Logs</h2>
+                        <p>The app source includes a sample screen, hidden from normal tab navigation, that can request a sample response from a configured backend when opened. The reviewed backend handles health and sample-response requests and enables request logging. The reviewed application routes do not implement uploading or synchronizing your tracker entries, daily reports, or photos to that backend.</p>
+                        <p>The app also writes daily-report contents to diagnostic console logs when a report is saved. Those contents can include custom answers, location, activity information, and photo file references. These logs are separate from the app's saved records.</p>
+                        <p>Production hosting, runtime integrations, and diagnostic-log collection and retention have not been verified. We therefore do not claim that no personal information reaches or is retained by a backend, hosting provider, or diagnostic service, or that all network requests bypass intermediaries.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="h5">Retention and Your Controls</h2>
+                        <p>Saved tracker and report records have no automatic expiry in the current app. Deleting a tracker removes it and its entries from the tracker store, but does not remove snapshots already saved in daily reports. Deleting a custom question does not erase its answers from previously saved reports.</p>
+                        <p>The current app does not provide a dedicated delete-saved-report or erase-all-data control. Removing a photo reference does not guarantee deletion of the underlying image file. Device backups and copies held by sharing destinations are separate from these in-app controls; this policy makes no promise that deleting an app record removes those copies.</p>
+                        <p>For privacy questions about saved records, exports, or diagnostics, contact us through the <a href="support.html">Support page</a>.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="h5">This Website and Support</h2>
+                        <p>This website loads Bootstrap styles and scripts from <code>cdn.jsdelivr.net</code>. Visiting it therefore makes requests to that external service as well as the website host. Those services can receive connection information such as your IP address; their hosting and log-retention settings have not been verified as part of this policy.</p>
+                        <p>If you email the support address listed on our <a href="support.html">Support page</a>, your email address and any information you include are sent through email services to support. Include only information you intend to share.</p>
+                    </div>
+                </div>
 
                 <div class="card mb-4">
                     <div class="card-body">
                         <h2 class="h5">Changes to This Privacy Policy</h2>
-                        <p>
-                            We may update our Privacy Policy from time to time. We will notify you of any changes by posting 
-                            the new Privacy Policy on this page and updating the "Last updated" date.
-                        </p>
+                        <p>We may update this policy by posting a revised version on this page and changing the "Last updated" date.</p>
                     </div>
                 </div>
 
                 <div class="card mb-4">
                     <div class="card-body">
                         <h2 class="h5">Contact Us</h2>
-                        <p>
-                            If you have questions or comments about this Privacy Policy, please contact us via our 
-                            <a href="support.html">Support page</a>.
-                        </p>
+                        <p>If you have questions about this policy, please contact us via our <a href="support.html">Support page</a>.</p>
                     </div>
                 </div>
             </div>
